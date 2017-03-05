@@ -1,0 +1,203 @@
+*, * *{
+	font-family: arial;
+	/*overflow: auto;*/
+	box-sizing: border-box;
+}
+
+.btn{
+	border-radius: 0px;
+}
+
+body{
+	position: relative;
+}
+
+header #logo{
+	background: url(http://www.userlogos.org/files/logos/jumpordie/notebookcheck_02.png) left no-repeat;
+	height: 90px;
+	width: 80%;
+	margin-left: 40px;
+}
+
+.navbar{
+	background-color: #212121;
+	margin-bottom: 0px;
+	border: 1px solid #212121	;
+	border-radius: 0px;
+}
+
+.modal{
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.modal span{
+	padding-right: 20px;
+}
+
+#adCarousel, #adCarousel > .container-fluid{
+	margin: 0px;
+	padding: 0px;
+}
+
+main{
+	padding: 0px 25px;
+}
+
+main .featured-title h2{
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #abb7b7; 
+   line-height: 0.1em;
+   margin: 10px 0 40px;
+}
+
+main .left > div{
+	overflow: auto;
+}
+
+main .card{
+	/*outline: 1px solid #ddd;*/
+	padding: 0px;
+	margin: 0 20px;
+}
+
+/*main .card > .card-desc{
+	padding: 10px;
+	font-weight: bold;
+}*/
+
+main .card .row{
+	outline: none;
+	border:none;
+}
+
+main .carousel-main-item-head{
+	background-color: #eee;
+	color: black;
+}
+
+
+main .carousel-main-item-head > h4{
+	/*font-weight: 600;*/
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 26px; 
+}
+
+main .carousel-main-items{
+	background-color: #f5f5f5;
+}
+
+main .main-inner-item{
+	position: relative;
+	height: 300px;
+}
+
+main .main-item-desc{
+	text-overflow: ellipsis;
+}
+
+main .item .main-item-price{
+	bottom: 0px;
+	margin-bottom: 0px;
+	position: absolute;
+}
+
+main .carousel-main-items .main-item-price{
+	height: 50px;
+}
+
+main .card .main-item-photo, .main-item-desc, .main-item-price, .main-item-btn-cust{
+	margin: 10px;
+
+}
+
+main .main-item-btn-cust{
+}
+
+main .main-item-btn-cust .btn-default{
+	background-color: #f22613;
+	color: white;
+	bottom: 0px;
+	/*width: 257.50px;*/
+}
+
+main .main-item-btn-cust  .btn-default:hover{
+	background-color: #e02311;
+}
+
+main .main-item-btn-admin .btn-default{
+	background-color: #cf000f;
+	color:white;
+}
+
+main .main-item-btn-admin .btn-default:hover{
+	background-color: #b5000c;
+}
+
+main .card > .owl-carousel{
+	width: auto;
+}
+
+
+main .right{
+}
+
+footer{
+	background-color: black;
+}
+
+footer > div{
+	margin-top: 70px;
+	padding-bottom: 60px;
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 1000px){
+	#adCarousel .item, #adCarousel .owl-prev, .owl-next{
+		display: none;
+		/*height: 300px;*/
+	}
+
+	main #rightAds{
+		display: none;
+	}
+}
+
+
+/* Owl Carousel Modifications */
+
+.owl-carousel {
+position: relative;
+}
+.owl-prev,
+.owl-next {
+position: absolute;
+top: 50%;
+margin-top: -10px; /*// Half of the prev/next buttons height here in negatives to center them perfectly
+*/
+}
+.owl-prev {
+left: 20px;
+}
+.owl-next {
+right: 20px;
+}
+
+.owl-prev:hover, .owl-next:hover{
+	text-shadow: black  0.2em 0.2em 0.2em;
+}
+
+main .carousel-main-items .owl-prev,main .carousel-main-items .owl-next{
+	position: absolute;
+	top: 39%;
+	margin-top: -10px; /*// Half of the prev/next buttons height here in negatives to center them perfectly*/
+}
+
+.carousel-main-items .owl-prev {
+left: 15px;
+}
+.carousel-main-items .owl-next {
+right: 15px;
+}
