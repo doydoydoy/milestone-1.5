@@ -2,48 +2,75 @@
 <html>
 <head>
 	<title>Ecommerce Login Page</title>
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<!-- Latest compiled and minified CSS Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/
+	bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<style type="text/css">
 		form label{
 			font-weight: bolder;
+		}
+		form input{
+			border-radius: none; 
 		}
 	</style>
 </head>
 <body>
 
 
-
-<div style="padding:20px; margin: 0 30%;">
-
-	<div>
-		<h1>Sign In</h1>
-	</div>
-
-	<form method="POST">
-		<label>Username/Email</label><br>
-		<input type="text" name="user_log"></input><br>
-		<label>Password</label><br>
-		<input type="password" name="pass_log"></input><br><br>
-		<input type="submit" value="Sign In" name="submit_log"></input>
-	</form>
-
-	<div>
-		<h1>Register Here</h1>
-	</div>
-
-	<form method="POST">
-		<label>Username/Email</label><br>
-		<input type="text" name="user_reg"></input><br>
-		<label>Password</label><br>
-		<input type="password" name="pass_reg"></input><br>
-		<label>Confirm Password</label><br>
-		<input type="password" name="pass_reg_conf"></input><br><br>
-		<input type="submit" value="Register" name="submit_reg"></input>
-	</form>
-</div>
+<main style="position: relative; height: 99vh;">
 
 <?php 
 
 	session_start();
+
+	
+	if($_SESSION['username']==""&&$_SESSION['role']==""){
+		echo "<div style='padding:20px; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);border: 1px solid black; width:50vh'>
+
+			<div>
+				<h1 style='margin-top:0'>Sign In</h1>
+			</div>
+
+			<form method='POST'>
+				<div class='form-group'>
+				<label>Username/Email</label><br>
+				<input type='text' name='user_log' class='form-control'></input><br>
+				<label>Password</label><br>
+				<input type='password' name='pass_log' class='form-control'></input><br><br>
+				<input type='submit' value='Sign In' name='submit_log' class='form-control btn btn-danger'></input>
+				</div>
+			</form>
+
+			<div style='border-top: 2px dashed grey'>
+				<h1>Register Here</h1>
+			</div>
+
+			<form method='POST'>
+				<label>Username/Email</label><br>
+				<input type='text' name='user_reg' class='form-control'></input><br>
+				<label>Password</label><br>
+				<input type='password' name='pass_reg' class='form-control'></input><br>
+				<label>Confirm Password</label><br>
+				<input type='password' name='pass_reg_conf' class='form-control'></input><br><br>
+				<input type='submit' value='Register' name='submit_reg' class='form-control btn btn-danger'></input>
+			</form>
+		</div>";
+	}
+	else{
+		echo "<script>window.location.href='template.php'</script>";
+
+	}
 
 
 	// Get list of users in JSON file
@@ -52,6 +79,7 @@
 		$decoded_users = json_decode($user_strings,true); 
 		return $decoded_users;
 	}
+
 	// Login verification
 	if(isset($_POST['submit_log'])){
 		$user = $_POST['user_log'];
@@ -65,6 +93,7 @@
 				$_SESSION['username'] = $user;
 				$_SESSION['password'] = $pass;
 				$_SESSION['role'] = $dec_user['role'];
+				$_SESSION['cart_items']=[];
 				$login = true;
 				echo "<script>alert('Login Successful')</script>";
 				echo "<script>window.location.href='template.php'</script>";
@@ -75,6 +104,7 @@
 			echo "<script>alert('Wrong Login Info. Try Again.')</script>";
 		}
 	}
+
 
 	if(isset($_POST['submit_reg'])){
 		$pass_conf = sha1($_POST['pass_reg_conf']);
@@ -94,6 +124,7 @@
 				$reg['role']='regular';
 			}
 
+			// Get users in JSON file
 			$decoded_users = getUsers();
 
 			// Push new user to list of users in array form
@@ -111,6 +142,7 @@
 	}
 ?>
 
+</main>
 </body>
 </html>
 

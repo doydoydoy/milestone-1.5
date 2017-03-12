@@ -2,6 +2,7 @@
     {
         "prod_name": "Dell XPS 13",
         "prod_model": "XPS9350-2008SLV",
+        "brand": "Dell",
         "os": "Windows 10",
         "screen": "13.3 inch",
         "memory": "8GB LPDDR3",
@@ -16,7 +17,8 @@
     },
     {
         "prod_name": "Razer Blade Stealth",
-        "prod_model": "XPS9350-2008SLV",
+        "prod_model": "XPS9350-2008SLVD",
+        "brand": "Razer",
         "os": "Windows 10",
         "screen": "12.5 inch",
         "memory": "8GB LPDDR3",
@@ -24,14 +26,15 @@
         "storage": "128GB SSD",
         "graphics": "Intel HD Graphics 520",
         "color": "Black",
-        "image": "https:\/\/assets2.razerzone.com\/images\/razer-blade-stealth\/ee05e32fd4d4fa4b25ef2be529358e4a-rgb-blade-stealth.jpg",
+        "image": "https:\/\/assets.razerzone.com\/eeimages\/products\/23914\/gallery\/RzrBlade12_03.png",
         "curr_price": "$1000",
         "disc_off": "0.01%",
         "disc_price": "$999.99"
     },
     {
         "prod_name": "Acer Predator VX 15",
-        "prod_model": "XPS9350-2008SLV",
+        "prod_model": "XPS9350-2008SLVS",
+        "brand": "Acer",
         "os": "OSX Sierra",
         "screen": "15.6 inch",
         "memory": "8GB LPDDR3",
@@ -46,6 +49,8 @@
     },
     {
         "prod_name": "Asus Zenbook UX305UA",
+        "prod_model": "XPS9350-2008SLVA",
+        "brand": "Asus",
         "os": "Win 10",
         "screen": "13.3 inch FHD",
         "memory": "8GB LPDDR3",
@@ -57,5 +62,21 @@
         "curr_price": "$1200",
         "disc_off": "25%",
         "disc_price": "$900"
+    },
+    {
+        "prod_name": "Microsoft Surface Book",
+        "prod_model": "XPS9350-2008SLVH",
+        "brand": "Microsoft",
+        "os": "Win 10",
+        "screen": "13.5 inch",
+        "memory": "8GB LPDDR3",
+        "cpu": "Intel Core i5 6th Gen",
+        "storage": "128GB SSD",
+        "graphics": "NVIDIA\u00ae GeForce\u00ae GTX 965M 2GB GPU",
+        "color": "White",
+        "image": "https:\/\/c.s-microsoft.com\/en-us\/CMSImages\/SurfaceBook_Office_V2.jpg?version=2abc1f1c-e1de-dd71-d65d-e6b372c8153b",
+        "curr_price": "$1000",
+        "disc_off": "0.01%",
+        "disc_price": "$999.99"
     }
 ]

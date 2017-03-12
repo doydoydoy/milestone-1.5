@@ -1,0 +1,116 @@
+{
+    "jonathan": {
+        "2017-03-12 05:24:13pm": [
+            {
+                "prod_name": "Dell XPS 13",
+                "prod_model": "XPS9350-2008SLV",
+                "os": "Windows 10",
+                "screen": "13.3 inch",
+                "memory": "8GB LPDDR3",
+                "cpu": "Intel Core i5-6200U 2.3 GHz",
+                "storage": "128GB SSD",
+                "graphics": "Intel HD Graphics 520",
+                "color": "Silver",
+                "image": "http:\/\/i.dell.com\/sites\/imagecontent\/products\/PublishingImages\/xps-13-9350-laptop\/laptop-xps-13-9350-pdp-polaris-03.jpg",
+                "curr_price": "$1000",
+                "disc_off": "0.01%",
+                "disc_price": "$999.99",
+                "quantity": 1,
+                "total_price": 999.99
+            }
+        ],
+        "2017-03-12 05:24:57pm": [
+            {
+                "prod_name": "Dell XPS 13",
+                "prod_model": "XPS9350-2008SLV",
+                "os": "Windows 10",
+                "screen": "13.3 inch",
+                "memory": "8GB LPDDR3",
+                "cpu": "Intel Core i5-6200U 2.3 GHz",
+                "storage": "128GB SSD",
+                "graphics": "Intel HD Graphics 520",
+                "color": "Silver",
+                "image": "http:\/\/i.dell.com\/sites\/imagecontent\/products\/PublishingImages\/xps-13-9350-laptop\/laptop-xps-13-9350-pdp-polaris-03.jpg",
+                "curr_price": "$1000",
+                "disc_off": "0.01%",
+                "disc_price": "$999.99",
+                "quantity": 2,
+                "total_price": 1999.98
+            },
+            {
+                "prod_name": "Razer Blade Stealth",
+                "prod_model": "XPS9350-2008SLVD",
+                "os": "Windows 10",
+                "screen": "12.5 inch",
+                "memory": "8GB LPDDR3",
+                "cpu": "Intel Core i7-6500U 2.5 GHz",
+                "storage": "128GB SSD",
+                "graphics": "Intel HD Graphics 520",
+                "color": "Black",
+                "image": "https:\/\/assets.razerzone.com\/eeimages\/products\/23914\/gallery\/RzrBlade12_03.png",
+                "curr_price": "$1000",
+                "disc_off": "0.01%",
+                "disc_price": "$999.99",
+                "quantity": 1,
+                "total_price": 999.99
+            }
+        ],
+        "2017-03-12 05:37:19pm": [
+            {
+                "prod_name": "Asus Zenbook UX305UA",
+                "prod_model": "XPS9350-2008SLVA",
+                "os": "Win 10",
+                "screen": "13.3 inch FHD",
+                "memory": "8GB LPDDR3",
+                "cpu": "Intel Broadwell Y Core M-5Y10",
+                "storage": "128GB SSD",
+                "graphics": "Intel 5300 HD",
+                "color": "White",
+                "image": "https:\/\/www.webantics.com\/content\/images\/thumbs\/004\/0045951_asus-zenbook-ux305ua-fb011r-i7-6500u-133-quad-hd-qhd-ultrabook-sleeve-aurora-metallic.jpeg",
+                "curr_price": "$1200",
+                "disc_off": "25%",
+                "disc_price": "$900",
+                "quantity": 1,
+                "total_price": 900
+            }
+        ]
+    },
+    "john": {
+        "2017-03-12 05:46:50pm": [
+            {
+                "prod_name": "Dell XPS 13",
+                "prod_model": "XPS9350-2008SLV",
+                "os": "Windows 10",
+                "screen": "13.3 inch",
+                "memory": "8GB LPDDR3",
+                "cpu": "Intel Core i5-6200U 2.3 GHz",
+                "storage": "128GB SSD",
+                "graphics": "Intel HD Graphics 520",
+                "color": "Silver",
+                "image": "http:\/\/i.dell.com\/sites\/imagecontent\/products\/PublishingImages\/xps-13-9350-laptop\/laptop-xps-13-9350-pdp-polaris-03.jpg",
+                "curr_price": "$1000",
+                "disc_off": "0.01%",
+                "disc_price": "$999.99",
+                "quantity": 6,
+                "total_price": 5999.9400000000005
+            },
+            {
+                "prod_name": "Razer Blade Stealth",
+                "prod_model": "XPS9350-2008SLVD",
+                "os": "Windows 10",
+                "screen": "12.5 inch",
+                "memory": "8GB LPDDR3",
+                "cpu": "Intel Core i7-6500U 2.5 GHz",
+                "storage": "128GB SSD",
+                "graphics": "Intel HD Graphics 520",
+                "color": "Black",
+                "image": "https:\/\/assets.razerzone.com\/eeimages\/products\/23914\/gallery\/RzrBlade12_03.png",
+                "curr_price": "$1000",
+                "disc_off": "0.01%",
+                "disc_price": "$999.99",
+                "quantity": 3,
+                "total_price": 2999.9700000000003
+            }
+        ]
+    }
+}
