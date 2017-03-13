@@ -113,9 +113,43 @@
 </header>
 
 <main class="container">
-	<h4>All Users</h4>
-	<table>
-		
+	<br>
+	<h4>All Users <span class="glyphicon glyphicon-user"></span></h4>
+	<br>
+	<table class='table table-condensed'>
+		<tr class="danger">
+			<th>Username</th>
+			<th>Password</th>
+			<th>Account Type</th>
+			<th>Action</th>
+		</tr>
+		<?php
+
+			$users = json_decode(file_get_contents('users.json'),true);
+			foreach ($users as $key => $value) {
+				echo "<tr>
+						<form method='POST' action='admin-users.php?index=".$key."'>
+							<td>".$value['username']."</td>
+							<td>".$value['password']."</td>
+							<th>".$value['role']."</th>
+							<th><input class='btn btn-danger' type='submit' name='delUser' value='Delete User' onclick='<?php deleteUser($key) ?>'></th>
+						</form>
+					</tr>";
+			}
+
+			if(isset($_POST['delUser'])){
+				$delAcc = $_GET['index'];
+				unset($users[$delAcc]);
+				// array_values($users);
+				$fp = fopen('users.json', 'w');
+				fwrite($fp, json_encode($users,JSON_PRETTY_PRINT));
+				fclose($fp);
+				echo "<script> window.location.href='admin-users.php'</script>";
+			}
+			
+
+
+		?>
 	</table>
 </main>
 
