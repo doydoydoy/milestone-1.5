@@ -118,7 +118,7 @@
 <!-- Carousel for main page ads -->
 <div id="adCarousel">
 	<div class="container-fluid" id="banner" style="height: auto;">
-		<div class="owl-carousel owl-theme owl-loaded" id="owl-demo">
+		<div class="owl-carousel owl-theme owl-loaded" id="owl-demo2">
 		   <?php echoCarouselItems(); ?>
 		   
 		</div>
@@ -317,6 +317,15 @@
 	$(document).ready(function(){
 
 		$("#owl-demo").owlCarousel({
+			nav:true,
+			items:1,
+			loop:true,
+			autoplay: 2000,
+			mouseDrag: false,
+			navText:["<i class='glyphicon glyphicon-chevron-left ' aria-hidden='true' style='color:#cecece;opacity:0.4;font-size:30px'></i>",
+			"<i class='glyphicon glyphicon-chevron-right' aria-hidden='true' style='color:#cecece;opacity:0.4;font-size:30px'></i>",]		
+			});
+		$("#owl-demo2").owlCarousel({
 			nav:true,
 			items:1,
 			loop:true,
